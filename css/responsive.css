@@ -1,0 +1,159 @@
+@media (max-width: 991px) {
+  .header-top h1 {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .banner .banner-content {
+    display: none;
+  }
+  .header {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #0198cf;
+  }
+  main {
+    margin-top: 79px;
+  }
+}
+/* @media (max-width: 576px) {
+  .row > [class*="col-"] {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+} */
+@media (max-width: 720px) {
+  .header-top .logo {
+    width: 85px;
+  }
+  .help h2,
+  .chuong-trinh h2,
+  .new-conttent h2,
+  .doi-tac h2 {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  .form-pc {
+    display: none;
+  }
+  .header-top {
+    justify-content: space-between;
+  }
+  .search1 {
+    padding-top: 20px;
+    display: block;
+  }
+
+  .header-top form {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+  .box-dt2 {
+    display: block;
+  }
+  .help {
+    padding-bottom: 10px;
+  }
+  .help-box {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  .help-box img {
+    bottom: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  .help h3 {
+    font-size: 30px;
+    padding: 10px 0px 5px 30px;
+  }
+  .help-box p {
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+  .thong-ke {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .thong-ke img {
+    padding-top: 0;
+  }
+  .content-thongke h2 {
+    font-size: 16px;
+    padding: 0;
+    line-height: 30px;
+  }
+  .content-thongke p {
+    font-size: 14px;
+    padding-top: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .content-thongke p:nth-child(3) {
+    display: none;
+  }
+  .content-thongke {
+    padding: 0;
+  }
+  .content-thongke button,
+  .new-conttent button {
+    width: 120px;
+    height: 35px;
+  }
+  .new-conttent button {
+    bottom: 20px;
+    left: 30px;
+  }
+  .chuong-trinh {
+    padding-bottom: 10px;
+  }
+  .box-chuong-trinh h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .chuong-trinh .box-chuong-trinh {
+    margin-bottom: 20px;
+  }
+  .box-new {
+    width: 100%;
+    position: initial;
+  }
+  .new {
+    padding-bottom: 15px;
+  }
+  .box-new .time {
+    font-size: 12px;
+  }
+  .new-conttent {
+    padding-bottom: 60px;
+  }
+  .box-img {
+    width: unset;
+    height: unset;
+    padding: 20px;
+  }
+  .box-dt2 {
+    padding-top: 10px;
+  }
+  .footer img {
+    display: inline;
+  }
+  .footer h2 {
+    display: inline;
+    font-size: 16px;
+  }
+  .footer p {
+    font-size: 13px;
+  }
+  .footer h3 {
+    font-size: 14px;
+  }
+}
