@@ -81,7 +81,15 @@ main {
   border: 1px solid #dadae5;
   box-sizing: border-box;
   border-radius: 99px;
-  padding: 0 25px 0 15px;
+  padding: 0 30px 0 15px;
+}
+.header-top form button i {
+  padding-right: 10px;
+}
+.header-top .search-field1 button i {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
 }
 .header-top form button {
   position: absolute;
@@ -105,17 +113,17 @@ main {
 }
 .nav-menu ul li:hover {
   background-color: #f1f1f1;
-  -webkit-transition: background-color 0.3s ease-out;
-  -moz-transition: background-color 0.3s ease-out;
-  -o-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
 .nav-menu ul li a:hover {
   color: #0198cf;
-  -webkit-transition: color 0.3s ease-out;
-  -moz-transition: color 0.3s ease-out;
-  -o-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
 }
 .nav-menu ul li a {
   display: block;
@@ -543,6 +551,14 @@ footer {
 }
 .footer i:hover {
   color: #ee2f72;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+.footer i {
+  font-size: 30px;
+  padding-right: 10px;
 }
 button:hover {
   background: #ececee;
@@ -565,8 +581,12 @@ a:hover {
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
-button i {
+.new-conttent button i,
+.thong-ke button i {
   padding-right: 10px;
+}
+.search1 button i {
+  padding: 10px;
 }
 /* back to top*/
 #button {
@@ -596,21 +616,30 @@ button i {
 #button:hover {
   cursor: pointer;
   background-color: rgb(111, 233, 241);
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 #button:active {
   background-color: rgb(111, 233, 241);
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 #button.show {
   opacity: 1;
   visibility: visible;
 }
 /*search mobile*/
-.search-btn {
+.search-btn,
+.bar-menu {
   border: 0;
   margin: 0;
   background-color: #0198cf;
   color: white;
-  padding: 5px 0px 5px 10px;
+  /* padding: 5px 0px 5px 10px; */
   border-radius: 50%;
   font-size: 20px;
 }
@@ -651,7 +680,7 @@ input {
   width: 100%;
   border: 1px solid #0198cf;
   padding-left: 15px;
-  padding-right: 30px;
+  padding-right: 50px;
   font-size: 14px;
   border-radius: unset;
   height: 35px;
@@ -664,4 +693,147 @@ input {
   padding: 0px 10px;
   font-size: 18px;
   margin-top: 3px;
+}
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6000;
+  display: none;
+}
+.menu-mobile .wrapper {
+  background-color: #fff;
+  height: 70px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.menu-mobile #bt-menu-mobile {
+  border: none;
+  background: none;
+  width: 40px;
+  float: right;
+  margin: 20px 20px 0 0;
+  position: relative;
+  height: 30px;
+  cursor: pointer;
+}
+.menu-mobile #bt-menu-mobile span {
+  background-color: #1b7d6d;
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 100%;
+}
+.menu-mobile #bt-menu-mobile span.top {
+  top: 0;
+}
+.menu-mobile #bt-menu-mobile span.middle {
+  top: 50%;
+  margin-top: -2px;
+}
+.menu-mobile #bt-menu-mobile span.bottom {
+  top: 100%;
+  margin-top: -2px;
+}
+
+#wrapper-menu-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+#wrapper-menu-mobile .wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #46c4d0;
+  right: -100%;
+  z-index: 10;
+}
+.menu-mobile .wrapper > a {
+  font-size: 20px;
+  padding: 12px 0 0 10px;
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+#wrapper-menu-mobile ul {
+  /* padding: 0 20px; */
+  position: relative;
+  height: 100%;
+  text-align: left;
+  /* overflow-y: scroll; */
+}
+#wrapper-menu-mobile ul h1 {
+  margin: 0;
+  padding-left: 15px;
+}
+#wrapper-menu-mobile ul li {
+  padding: 10px 0;
+  border-top: 1px solid #fff;
+  list-style: none;
+}
+#wrapper-menu-mobile ul li.first {
+  border: none;
+}
+#wrapper-menu-mobile ul li.first img {
+  padding-left: 20px;
+  width: 100px;
+}
+#wrapper-menu-mobile ul li a {
+  padding-left: 15px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+#wrapper-menu-mobile ul li button {
+  background: none;
+  border: none;
+  float: right;
+}
+#wrapper-menu-mobile ul li span {
+  /* float: left; */
+  margin: 5px 0 0 10px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-mobile .block-menu-mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#wrapper-menu-mobile #bt-fechar-menu {
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 30px;
+}
+.search-field1:after {
+  content: "";
+  width: 1px;
+  height: 26px;
+  background: #555;
+  position: absolute;
+  right: 54px;
+  top: 50%;
+  margin-top: -13px;
 }
