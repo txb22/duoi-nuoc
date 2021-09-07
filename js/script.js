@@ -1,3 +1,17 @@
+/*slider*/
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 4000,
+    }
+});
+
+/*back to top*/
+
 var btn = $('#button');
 
 $(window).scroll(function () {
@@ -13,6 +27,7 @@ btn.on('click', function (e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+/*menu mobile*/
 jQuery(document).ready(
     function () {
         menuMobile();
@@ -47,6 +62,18 @@ function closeMenuMobile() {
         });
     });
 }
-document.getElementById("click").addEventListener("click", function () {
+
+
+// document.getElementById("click").addEventListener("click", function () {
+//     document.getElementById("search-field").classList.toggle("form-active");
+// });
+
+
+document.getElementById("click").onclick = function () {
     document.getElementById("search-field").classList.toggle("form-active");
-});
+
+}
+
+// document.getElementById("click").onblur = function () {
+//     document.getElementById("search-field").classList.remove("form-active");
+// }

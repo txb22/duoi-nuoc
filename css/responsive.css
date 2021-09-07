@@ -50,6 +50,7 @@
     right: 0;
     width: 100%;
   }
+  .box-dt1,
   .box-dt2 {
     display: block;
   }
@@ -110,7 +111,7 @@
   }
   .new-conttent button {
     bottom: 20px;
-    left: 30px;
+    left: 15px;
   }
   .chuong-trinh {
     padding-bottom: 10px;
@@ -139,9 +140,16 @@
     width: unset;
     height: unset;
     padding: 20px;
+    margin-bottom: 10px;
   }
+  /* .boxx img {
+    width: 90%;
+  } */
   .box-dt2 {
-    padding-top: 10px;
+    padding-top: 0;
+  }
+  .doi-tac {
+    padding-bottom: 20px;
   }
   .footer img {
     display: inline;
@@ -155,5 +163,18 @@
   }
   .footer h3 {
     font-size: 14px;
+  }
+  .help-box,
+  .box-thongke,
+  .new,
+  .box-chuong-trinh {
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .box-dt1 > [class*="col-"],
+  .box-dt2 > [class*="col-"] {
+    padding-right: 7px;
+    padding-left: 7px;
   }
 }

@@ -8,6 +8,10 @@
   font-weight: 100;
 }
 @font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
   font-family: Roboto Condensed Bold;
   src: url(../font/Roboto-BoldCondensed.ttf);
   font-weight: 100;
@@ -35,8 +39,17 @@
   src: url(../font/Oswald-Regular.ttf);
 }
 
-.row {
-  margin: 0;
+/* .row {
+  margin-left: 0px;
+  margin-right: 0px;
+} */
+.no-gutters {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 .header {
   z-index: 999;
@@ -150,6 +163,7 @@ main {
   width: 35%;
   border-radius: 0px 10px 0px 0px;
   opacity: 0.8;
+  left: 0;
 }
 .banner .banner-content h3 {
   background: #ee2f72;
@@ -240,9 +254,14 @@ main {
 }
 .help-box {
   padding-bottom: 40px;
+  margin-right: 10px;
 }
 .thong-ke {
   background: #f1f7fa;
+}
+.thong-ke .vecto img:after {
+  content: "";
+  background-image: url("../images/Vector\ 202.png");
 }
 .thong-ke img {
   padding-top: 70px;
@@ -271,7 +290,9 @@ main {
   text-align: justify;
   padding-top: 20px;
 }
-
+.box-thongke {
+  margin-right: 10px;
+}
 .content-thongke button {
   width: 159px;
   height: 45px;
@@ -301,9 +322,11 @@ main {
   text-align: center;
   margin: 0;
 }
-.chuong-trinh .box-chuong-trinh {
+.box-chuong-trinh {
   padding: 10px;
   background: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .box-chuong-trinh h4 {
   font-family: Roboto;
@@ -339,6 +362,7 @@ main {
 }
 .new {
   position: relative;
+  margin-right: 10px;
 }
 .box-new {
   background: #ffffff;
@@ -348,6 +372,14 @@ main {
   position: absolute;
   top: 70%;
   left: 2.5%;
+}
+.box-new:after {
+  content: "";
+  background-image: url("../images/Group\ 568.png");
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 29px;
 }
 .box-new h3 {
   font-family: RobotoCondensed;
@@ -386,12 +418,12 @@ main {
   color: #555555;
 }
 .box-new .box-new-text {
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 .new-conttent button {
   position: absolute;
-  bottom: 8%;
-  left: 45%;
+  bottom: 5%;
+  left: 44%;
   width: 159px;
   height: 45px;
   /* KeyKey */
@@ -429,6 +461,7 @@ main {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
+.box-dt1,
 .box-dt2 {
   display: flex;
   justify-content: center;
@@ -561,7 +594,7 @@ footer {
   padding-right: 10px;
 }
 button:hover {
-  background: #ececee;
+  background: #e2e2e2;
   color: #0198cf;
   font-weight: bold;
   -webkit-transition: color 0.3s ease-out;
@@ -575,7 +608,7 @@ button:hover {
 }
 a:hover {
   text-decoration: none;
-  color: #0198cf;
+  color: #e11b51;
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
@@ -615,14 +648,14 @@ a:hover {
 }
 #button:hover {
   cursor: pointer;
-  background-color: rgb(111, 233, 241);
+  background-color: #e11b51;
   -webkit-transition: background-color 0.3s ease-out;
   -moz-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
 #button:active {
-  background-color: rgb(111, 233, 241);
+  background-color: #e11b51;
   -webkit-transition: background-color 0.3s ease-out;
   -moz-transition: background-color 0.3s ease-out;
   -o-transition: background-color 0.3s ease-out;
@@ -836,4 +869,36 @@ input {
   right: 54px;
   top: 50%;
   margin-top: -13px;
+}
+/* slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

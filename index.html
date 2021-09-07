@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Duoi Nuoc</title>
 </head>
 
@@ -33,7 +34,7 @@
                     <button id="click" class="search-btn"><i class="fa fa-search"></i></button>
                     <button id="bt-menu-mobile" class="bar-menu"><i class="far fa-bars"></i></button>
                     <form id="search-field" class="search-field1" action="">
-                        <input type="text" placeholder="Tìm kiếm...">
+                        <input id="input-cl" type="text" placeholder="Tìm kiếm...">
                         <button><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -79,17 +80,42 @@
     <main>
         <section>
             <div class="banner">
-                <img src="images/image 26.png" alt="">
-                <div class="banner-content">
-                    <h3>Hoạt động cho trẻ em<i class="fal fa-arrow-circle-right"></i></h3></i>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley ...</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/image 26.png" alt="">
+                            <div class="banner-content">
+                                <h3>Hoạt động cho trẻ em<i class="fal fa-arrow-circle-right"></i></h3></i>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown
+                                    printer took a galley ...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image 26.png" alt="">
+                            <div class="banner-content">
+                                <h3>Hoạt động cho trẻ em<i class="fal fa-arrow-circle-right"></i></h3></i>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown
+                                    printer took a galley ...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image 26.png" alt="">
+                            <div class="banner-content">
+                                <h3>Hoạt động cho trẻ em<i class="fal fa-arrow-circle-right"></i></h3></i>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown
+                                    printer took a galley ...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="help">
                 <div class="container">
                     <h2>bạn có biết ?</h2>
-                    <div class="row">
+                    <div class="row no-gutter no-gutters">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div class="help-box bg-whitex">
                                 <h3 class="text-blux">01</h3>
@@ -117,38 +143,43 @@
         </section>
         <section class="thong-ke">
             <div class="container">
-                <div class="row">
+                <div class="row no-gutter no-gutters">
                     <div class="col-md-6 col-sm-12 col-xs-12">
-                        <img src="images/image 27.png" alt="">
+                        <div class="box-thongke vecto">
+                            <a href=""><img src="images/image 27.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-thongke">
-                            <h2>TRANG SỐ LIỆU THỐNG KÊ VỀ TÌNH HÌNH ĐUỐI NƯỚC</h2>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown
-                                printer
-                                took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries,
-                                but
-                                also the leap into
-                                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                                with
-                                the
-                                release of Letraset
-                                sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                                software
-                                like
-                                Aldus PageMaker
-                                including versions of Lorem Ipsum</p>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown
-                                printer
-                                took a galley of
-                                type and scrambled it to make a type specimen book. It has survived not only five
-                                centuries
-                            </p>
-                            <button><i class="fal fa-arrow-circle-right"></i>Xem thêm</button>
+                        <div class="box-thongke">
+                            <div class="content-thongke">
+                                <h2>TRANG SỐ LIỆU THỐNG KÊ VỀ TÌNH HÌNH ĐUỐI NƯỚC</h2>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown
+                                    printer
+                                    took a galley of
+                                    type and scrambled it to make a type specimen book. It has survived not only five
+                                    centuries,
+                                    but
+                                    also the leap into
+                                    electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                    1960s
+                                    with
+                                    the
+                                    release of Letraset
+                                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                                    software
+                                    like
+                                    Aldus PageMaker
+                                    including versions of Lorem Ipsum</p>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown
+                                    printer
+                                    took a galley of
+                                    type and scrambled it to make a type specimen book. It has survived not only five
+                                    centuries
+                                </p>
+                                <button><i class="fal fa-arrow-circle-right"></i>Xem thêm</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,16 +188,16 @@
         <section class="chuong-trinh">
             <h2>Chương trình của chúng tôi</h2>
             <div class="container">
-                <div class="row">
+                <div class="row no-gutter no-gutters">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="box-chuong-trinh">
-                            <img src="images/image 4.png" alt="">
+                            <a href=""><img src="images/image 4.png" alt=""></a>
                             <h4><a href="">Bài học 1 : Cách dạy trẻ học bơi từ 3 - 6 tuổi</a></h4>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="box-chuong-trinh">
-                            <img src="images/image 3.png" alt="">
+                            <a href=""><img src="images/image 3.png" alt=""></a>
                             <h4><a href="">Bài học 1 : Cách dạy trẻ học bơi từ 3 - 6 tuổi</a></h4>
                         </div>
                     </div>
@@ -176,10 +207,10 @@
         <section class="new-conttent">
             <h2>Tin tức & sự kiện</h2>
             <div class="container">
-                <div class="row">
+                <div class="row no-gutter no-gutters">
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="new">
-                            <img src="images/Rectangle 10.png" alt="">
+                            <a href=""><img src="images/Rectangle 10.png" alt=""></a>
                             <div class="box-new">
                                 <div class="box-new-text">
                                     <h3>
@@ -200,7 +231,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="new">
-                            <img src="images/Rectangle 12.png" alt="">
+                            <a href=""><img src="images/Rectangle 12.png" alt=""></a>
                             <div class="box-new">
                                 <div class="box-new-text">
                                     <h3>
@@ -221,7 +252,7 @@
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="new">
-                            <img src="images/Rectangle 14.png" alt="">
+                            <a href=""><img src="images/Rectangle 14.png" alt=""></a>
                             <div class="box-new">
                                 <div class="box-new-text">
                                     <h3>
@@ -248,29 +279,31 @@
             <h2>Đối tác</h2>
             <div class="container">
                 <div class="box-doi-tac">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="box-img">
-                                <img src="images/BLDTBXH.png" alt="">
+                    <div class="row no-gutter no-gutters">
+                        <div class="box-dt1">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="box-img">
+                                    <img src="images/BLDTBXH.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="box-img">
-                                <img src="images/Bloomberg.png" alt="">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="box-img">
+                                    <img src="images/BLDTBXH.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="box-img">
-                                <img src="images/WHO 1.png" alt="">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="box-img">
+                                    <img src="images/BLDTBXH.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="box-img">
-                                <img src="images/GHAI.png" alt="">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <div class="box-img">
+                                    <img src="images/BLDTBXH.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row no-gutter no-gutters">
                         <div class="box-dt2">
                             <div class="col-md-3 col-sm-6 col-xs-6">
                                 <div class="box-img">
@@ -279,12 +312,12 @@
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-6">
                                 <div class="box-img">
-                                    <img src="images/Bloomberg.png" alt="">
+                                    <img src="images/BLDTBXH.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-6">
                                 <div class="box-img">
-                                    <img src="images/WHO 1.png" alt="">
+                                    <img src="images/BLDTBXH.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -295,7 +328,7 @@
         <footer>
             <div class="footer">
                 <div class="container">
-                    <div class="row">
+                    <div class="row no-gutter no-gutters">
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <img src="images/logo 2.png" alt="">
                             <h2>Phòng chống đuối nước</h2>
@@ -332,6 +365,7 @@
         </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
