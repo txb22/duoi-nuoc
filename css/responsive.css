@@ -22,7 +22,36 @@
     padding-left: 7px;
   }
 } */
-@media (max-width: 720px) {
+@media (max-width: 576px) {
+  .new-conttent button {
+    bottom: 20px;
+    left: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .new-conttent button {
+    bottom: 20px;
+    left: 25px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+  .new-conttent button {
+    bottom: 3%;
+    left: 41%;
+  }
+  .content-thongke p {
+    padding-top: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (max-width: 768px) {
   .header-top .logo {
     width: 85px;
   }
@@ -109,10 +138,7 @@
     width: 120px;
     height: 35px;
   }
-  .new-conttent button {
-    bottom: 20px;
-    left: 15px;
-  }
+
   .chuong-trinh {
     padding-bottom: 10px;
   }

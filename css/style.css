@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: Roboto;
-  src: url(../font/Roboto-Bold.ttf);
+  src: url(../font/RobotoCondensed-Light.ttf);
 }
 @font-face {
   font-family: Roboto Condensed Bold;
@@ -334,7 +334,7 @@ main {
 .box-chuong-trinh h4 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 20px;
   line-height: 23px;
 }
@@ -592,9 +592,26 @@ footer {
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
+.footer-content {
+  padding-right: 50px;
+}
 .footer i {
-  font-size: 30px;
+  font-size: 25px;
   padding-right: 10px;
+}
+.lien-he-ct a {
+  width: 158px;
+  height: 55px;
+  font-family: RobotoCondensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  background: #ee2f72;
+  color: #fff;
+  border-radius: 10px;
 }
 button:hover {
   background: #e2e2e2;
