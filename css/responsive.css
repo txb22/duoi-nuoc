@@ -108,12 +108,17 @@
     padding-bottom: 20px;
   }
   .thong-ke img {
-    padding-top: 0;
+    padding: 0;
+  }
+  .vecto:after {
+    display: none;
   }
   .content-thongke h2 {
     font-size: 16px;
     padding: 0;
     line-height: 30px;
+    width: 100%;
+    margin: 0;
   }
   .content-thongke p {
     font-size: 14px;
@@ -126,12 +131,13 @@
     height: 75px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    padding-right: 0;
   }
   .content-thongke p:nth-child(3) {
     display: none;
   }
   .content-thongke {
-    padding: 0;
+    padding: 0 20px;
   }
   .content-thongke button,
   .new-conttent button {
